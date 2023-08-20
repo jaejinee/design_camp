@@ -34,7 +34,9 @@ function setupShuffle(texts) {
   shuffleInterval = setInterval(shuffleTexts, 60);
 
   shuffledTexts.forEach((text) => {
-    text.addEventListener("click", () => {
+    const eventName = isMobileDevice() ? "touchstart" : "click";
+
+    text.addEventListener(eventName, () => {
       if (isShuffling) {
         clearInterval(shuffleInterval);
         isShuffling = false;
@@ -44,6 +46,13 @@ function setupShuffle(texts) {
       }
     });
   });
+
+  function isMobileDevice() {
+    return (
+      typeof window.orientation !== "undefined" ||
+      navigator.userAgent.indexOf("IEMobile") !== -1
+    );
+  }
 }
 //
 const copyButton = document.getElementById("copyButton");
