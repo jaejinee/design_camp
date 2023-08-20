@@ -137,14 +137,14 @@ a:hover {
   height: calc(var(--height_s) * 3);
 }
 .text-container_1b {
-  top: calc(50% - (var(--height_m) * 2.25));
+  top: calc(50% - (var(--height_m) * 2.1));
 }
 .text-container_1c {
-  top: calc(50% - (var(--height_s) * 4.85));
+  top: calc(50% - (var(--height_s) * 4.7));
   margin-bottom: 20px;
 }
 .text-container_2b {
-  top: calc(50% - calc(var(--height_m) * 2.5));
+  top: calc(50% - calc(var(--height_m) * 2.25));
 }
 
 .text,
