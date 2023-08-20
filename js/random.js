@@ -31,7 +31,7 @@ function setupShuffle(texts) {
     shuffledTexts[randomIndex].style.opacity = 1;
   }
 
-  shuffleInterval = setInterval(shuffleTexts, 60);
+  shuffleInterval = setInterval(shuffleTexts, 100);
 
   shuffledTexts.forEach((text) => {
     const eventName = isMobileDevice() ? "touchstart" : "click";
@@ -41,7 +41,7 @@ function setupShuffle(texts) {
         clearInterval(shuffleInterval);
         isShuffling = false;
       } else {
-        shuffleInterval = setInterval(shuffleTexts, 60);
+        shuffleInterval = setInterval(shuffleTexts, 100);
         isShuffling = true;
       }
     });
