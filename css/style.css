@@ -21,6 +21,15 @@ body {
   word-break: keep-all;
   transition: background-color 0.5s;
 }
+img {
+  width: 50vw;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .green-bg {
   background-color: rgb(20, 255, 20);
 }
@@ -66,7 +75,7 @@ a:hover {
   color: var(--gray);
 }
 .intro {
-  margin: 100px 10px 40px 10px;
+  margin: 100px 20px 40px 20px;
   font-size: var(--text_s);
   line-height: 1.1;
 }
