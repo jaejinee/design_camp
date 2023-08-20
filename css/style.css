@@ -4,7 +4,7 @@
   --text_l: 128px;
   --text_m: 55px;
   --text_s: 36px;
-  --text_xs: 25px;
+  --text_xs: 18px;
 
   --height_l: calc(var(--text_l) + 19.2px);
   --height_m: calc(var(--text_m) + 12px);
@@ -18,6 +18,9 @@ body {
   overflow-x: hidden;
   word-break: keep-all;
   transition: background-color 0.5s;
+}
+.body_fixed {
+  overflow-y: hidden;
 }
 img {
   width: 50vw;
@@ -94,8 +97,13 @@ a:hover {
 }
 .note {
   color: var(--gray);
-  margin: 0 0 5px 10px;
+  margin: 0 20px 5px 20px;
   font-size: var(--text_xs);
+  display: flex;
+  gap: 10px;
+}
+.lastnote {
+  margin-bottom: 50px;
 }
 #copyButton {
   position: fixed;
@@ -109,7 +117,8 @@ a:hover {
 /*  */
 .container {
   margin: 0 20px;
-  height: 100vh;
+  height: 100dvh;
+  min-height: -webkit-fill-available;
 }
 .text-container {
   position: relative;
@@ -125,14 +134,14 @@ a:hover {
   height: calc(var(--height_s) * 3);
 }
 .text-container_1b {
-  top: calc(50% - (var(--height_m) * 2));
+  top: calc(50% - (var(--height_m) * 2.25));
 }
 .text-container_1c {
-  top: calc(50% - (var(--height_s) * 4.7));
+  top: calc(50% - (var(--height_s) * 4.85));
   margin-bottom: 20px;
 }
 .text-container_2b {
-  top: calc(50% - calc(var(--height_m) * 2));
+  top: calc(50% - calc(var(--height_m) * 2.5));
 }
 
 .text,
