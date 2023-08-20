@@ -76,12 +76,15 @@ a:hover {
   color: var(--gray);
 }
 .intro {
-  margin: 100px 20px 40px 20px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 90px 20px 40px 20px;
+  padding-top: 10px;
   font-size: var(--text_s);
   line-height: 1.1;
 }
 .intro-main {
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 .intro-sub {
   display: flex;
@@ -103,7 +106,7 @@ a:hover {
   gap: 10px;
 }
 .lastnote {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 #copyButton {
   position: fixed;
