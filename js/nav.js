@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
       a.style.color = item.color;
     }
     // disable nav
-    // if (index === 1 || index === 2) {
-    //   a.classList.add("isdisabled");
-    //   a.onclick = function () {
-    //     return false;
-    //   };
-    // }
+    if (index === 1 || index === 2) {
+      a.classList.add("isdisabled");
+      a.onclick = function () {
+        return false;
+      };
+    }
 
     div.appendChild(a);
     navList.appendChild(div);
