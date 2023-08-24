@@ -145,7 +145,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .text-container_2b {
-  top: calc(50% - calc(var(--height_m) * 2.25));
+  top: calc(50% - calc(var(--height_m) * 1.15));
 }
 
 .text,
@@ -192,7 +192,7 @@ a:hover {
     top: calc(50% - (var(--height_m) * 4));
   }
   .text-container_2b {
-    top: calc(50% - calc(var(--height_l) * 2));
+    top: calc(50% - calc(var(--height_l)));
   }
   .inst_link {
     text-underline-offset: 8px;

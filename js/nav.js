@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const subnavItems2 = [
     { text: "a. 소개", link: "p2-a.html" },
     { text: "b. 주제 뽑기", link: "p2-b.html" },
-    { text: "c. 타이머", link: "p2-c.html" },
+    // { text: "c. 타이머", link: "p2-c.html" },
   ];
   const subnavItems3 = [
     { text: "a. 소개", link: "p3-a.html" },
-    { text: "b. 타이머", link: "p3-b.html" },
+    // { text: "b. 타이머", link: "p3-b.html" },
   ];
 
   // Modify a specific navigation item for a specific page
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       a.style.color = item.color;
     }
     // disable nav
-    if (index === 1 || index === 2) {
+    if (index === 2) {
       a.classList.add("isdisabled");
       a.onclick = function () {
         return false;
